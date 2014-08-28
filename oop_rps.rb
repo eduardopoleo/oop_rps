@@ -2,7 +2,7 @@
 #  player
 #  	hand 
 
-# a game object compares both  
+# a game object compares both   
 
 CHOICES= {'r'=>'Rock','p'=>'Paper', 's'=>'Scissors'}
 
