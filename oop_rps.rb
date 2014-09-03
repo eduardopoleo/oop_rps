@@ -10,7 +10,8 @@ class Player
 	attr_accessor :name, :hand
 
 	def initialize(n)
-		@name=n
+		@name = n
+		@hand = ""
 	end
 	# Having this method here.. Does not feel right. But it works :(
 	def display_winning_message
@@ -87,7 +88,7 @@ class Game
 			if human.hand == computer.hand
 				puts "Hands are equal. It's a tie"
 			elsif (human.hand == 'r' && computer.hand == 's') || (human.hand == 'p' && computer.hand == 'r') || 
-				(human.hand == 's' && computer.hand = 'p')
+				(human.hand == 's' && computer.hand == 'p')
 				human.display_winning_message
 				puts "#{human.name} won"
 			else
